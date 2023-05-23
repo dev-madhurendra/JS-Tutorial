@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assignment-storage-js.js" defer></script>
+    <title>Storage Assignment</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            font-size: 25px;
+            font-weight: 300;
+            text-align: center;            
+        }
+        body{
+            width: 100vw;
+            min-height: 100vh;
+            background-color: rgba(123, 255, 100 ,0.3);
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .container > div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        span{
+            font-size: 40px;
+        }
+        button{
+            outline:none;
+            width: 250px;
+            height: 40px;
+            cursor: pointer;
+            border: 1px solid black;
+            background-color: black;
+            color: whitesmoke;
+            border-radius: 10px;
+        }
+        button:hover{
+            color: black;
+            background-color: white;
+        }
+        @media screen and (max-width: 768px) {
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="local-storage-container">
+            Local Storage : 
+            <div class="buttons-local">
+                <button class="local-storage-button">
+                    Local Increament
+                </button>
+            </div>
+            <div class="preview-local">
+                <span class="local-score">
+                    0
+                </span>
+            </div>
+        </div>
+        <div class="session-storage-container">
+            Session Storage :
+            <div class="buttons-session">
+                <button class="session-storage-button">
+                    Session Increament
+                </button>
+            </div>
+            <div class="preview-session">
+                <span class="session-score">
+                    0
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

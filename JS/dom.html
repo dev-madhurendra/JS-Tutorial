@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Dom traversing</title>
+        <script src="dom.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Headings</h1>
+            <p>This is paragraph</p>
+        </div>
+    </body>
+</html>
+<!--                           document(root)
+                                     |
+                                    html
+                                    /  \
+                                   /    \
+                                head    body
+                               /  \       \
+                              /    \       \
+                            title  script   div[class="container"]
+                                             /         \
+                                            /           \
+                                           h1            p
+ -->
